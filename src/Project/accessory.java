@@ -2,8 +2,6 @@
 package Project;
 
 
-import Project.KD_Post;
-import Project.Bill;
 import java.util.Scanner;
 
 class accessory extends KD_Post implements Accessoryy{
@@ -18,7 +16,7 @@ class accessory extends KD_Post implements Accessoryy{
                                                 "กล่อง ข." ,"กล่อง ค.","กล่อง ง.","กล่อง จ.","แสตมป์ ดวง 1 บาท","แสตมป์ ดวง 3 บาท",
                                                 "แสตมป์ ดวง 5 บาท"};
     public int pacc[]={1,7,10,15,20,12,17,22,27,32,1,3,5};
-    public int storage[]={5,5,5,5,5,5,5,5,5,5,5,5,5};
+    static public int storage[]={5,5,5,5,5,5,5,5,5,5,5,5,5};
     public void choice1() {}
     public void choice() {
         Scanner ad = new Scanner(System.in);
@@ -171,13 +169,13 @@ public void price(){
     price_a = price_accessory*count_accessory;
     System.out.println(" ราคาสินค้า "+ price_a + " บาท ");
     sum = sum+price_a;
-    this.price_1();
+    this.price_1();  
 }
-public double price_1(){
+public void price_1(){
     total_a = sum;
     System.out.println(" ราคารวมสินค้า " +total_a+ " บาท ");
     System.out.println("______________________________________________");
-    return total_a;
+    
 
 }
 

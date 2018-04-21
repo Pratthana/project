@@ -11,9 +11,11 @@ class Login {  //loginพนักงาน
     public void login(){
         System.out.println("");
         System.out.println("              - - กรุณาเข้าระบบ - -            ");
-           
+                            accessory c = new accessory ();
+                            Choice ch = new Choice();
     do{        
           Scanner log = new Scanner(System.in);
+                   System.out.println("");
                    System.out.print(" ชื่อผู้ใช้  --> ");
                    staff1 = log.nextLine();
                    System.out.print(" รหัสผู้ใช้ --> ");
@@ -24,22 +26,19 @@ class Login {  //loginพนักงาน
           
           if(staff1.equals(Username[0])&&staff2.equals(Password[0])){     
                      System.out.print(" พนักงาน1 : " + Staff[0]);       
-                      admin =Staff[0];
+                                        ch.choice1();
 } else if (staff1.equals(Username[1])&&staff2.equals(Password[1])){
                      System.out.print(" พนักงาน2 : " + Staff[1]);      
-                      admin =Staff[1];
+                                        ch.choice1();
 }else if(staff1.equals(Username[2])&&staff2.equals(Password[2])){
-                    System.out.println(" เจ้าของร้าน : " + Staff[2]);      
-                      admin =Staff[2];
-}         
-           System.out.println("");
-           System.out.println("______________________________________________");
-           System.out.println(" \n               - - ยินดีต้อนรับค่ะ - -               ");  
-           
+                    System.out.println(" เจ้าของร้าน : " + Staff[2]);    
+                                         c.choice();
 
+                      
+}         
 }
  
-    Login(){
+   Login(){
         System.out.println("______________________________________________");
     }
     Login(int q){
@@ -48,6 +47,12 @@ class Login {  //loginพนักงาน
     
     public  String getCosumer(){
     return admin;
-    }}
+    }
+
+  
+    }
+
+
+    
 
 

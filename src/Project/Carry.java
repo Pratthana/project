@@ -1,9 +1,6 @@
 package Project;
 
-import Project.Bill;
 import java.util.Scanner;
-
-
 class Carry extends accessory implements Carryy{
     public static int ps,bb;
     public static String NY;

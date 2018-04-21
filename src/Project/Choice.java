@@ -1,8 +1,6 @@
 package Project;
 
-import Project.Carry;
 import java.util.Scanner;
-
 class Choice extends Carry{ 
     public static int a;
     static public  String admins;

@@ -9,7 +9,7 @@ class Bill extends KD_Post{
     public static String NY1;
     public static double money = 0;
     public static double change = 0;
-    
+  
     
     public void bill(){
         
@@ -31,12 +31,18 @@ class Bill extends KD_Post{
         System.out.println("----------------------------------------------");
         System.out.println(" ");
         System.out.println(" รวมทั้งสิ้น                            " +total+    " บาท ");
-        Money();
+        Money(); total=0;
         System.out.println(" เงินทอน                             "+change+ " บาท ");
         System.out.println("_____________________________________________");
         System.out.println("=============== ขอบคุณที่ใช้บริการ ==============");
         System.out.println("______________________________________________");
         System.out.println("");
+          total=0;
+          total_a=0;
+          total_c=0;
+      
+
+        
       } 
     
     
